@@ -9,9 +9,9 @@ import scala.Tuple1;
 import java.util.Map;
 
 public class AnalyzeAirportsApp {
-    private static final DELIMETER = ",";
+    private static final String DELIMETER = ",";
 
-    
+
     public static void main(String[] args) throws Exception {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
