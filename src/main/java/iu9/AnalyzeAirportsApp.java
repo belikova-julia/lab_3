@@ -18,7 +18,6 @@ public class AnalyzeAirportsApp {
     private static final int DEST_AIRPORT_COL = 14;
     private static final int DELAY_COL = 18;
 
-
     public static void main(String[] args) throws Exception {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
