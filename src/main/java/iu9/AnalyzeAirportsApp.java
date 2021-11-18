@@ -3,6 +3,7 @@ package iu9;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.broadcast.Broadcast;
 
 public class AnalyzeAirportsApp {
     public static void main(String[] args) throws Exception {
@@ -17,5 +18,7 @@ public class AnalyzeAirportsApp {
                 .map(s -> )
                 .mapToPair(s -> new Tuple1<>())
                 .collectAsMap();
+        final Broadcast<Map<String, String>> airportBrodcasted =
+                sc.broadcast(airportMap)
     }
 }
