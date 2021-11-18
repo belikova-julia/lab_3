@@ -9,6 +9,11 @@ public class MergeAirportsStatistics implements
     @Override
     public AnalyticsSerializable call(AnalyticsSerializable analytics1,
                                       AnalyticsSerializable analytics2) throws Exception {
-        return null;
+        return new AnalyticsSerializable(
+                Float.max(analytics1.getMaxDalay(), analytics2.getMaxDalay()),
+                analytics1.getAmountOfDelays() + analytics2.getAmountOfDelays(),
+                analytics1.getAmountOfCancells() + analytics2.getAmountOfCancells(),
+                analytics1.getAmountOfFlights() + analytics2.getAmountOfFlights();
+                )
     }
 }
