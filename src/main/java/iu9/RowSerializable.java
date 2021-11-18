@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class RowSerializable implements Serializable {
     private String[] values;
+    private static final long serialVersionUID = 1L;
 
     private RowSerializable(String[] values) {
         this.values = values;
