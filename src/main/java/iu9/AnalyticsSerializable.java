@@ -1,5 +1,7 @@
 package iu9;
 
+import scala.Tuple2;
+
 public class AnalyticsSerializable {
     private static final long serialVersionUID = 2L;
 
@@ -50,7 +52,10 @@ public class AnalyticsSerializable {
         maxDalay = Math.max(maxDalay, delay);
     }
 
-    
+    public static String getAnalytics(
+            Tuple2<Tuple2<String, String>, AnalyticsSerializable> airports) {
+
+    }
 
 
 }
