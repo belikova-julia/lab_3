@@ -46,4 +46,7 @@ public class AnalyticsSerializable {
         amountOfFlights++;
     }
 
+    public void setMaxDelay(float delay) {
+        maxDalay = maxDalay > delay ? maxDalay : delay;
+    }
 }
