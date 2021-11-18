@@ -50,6 +50,6 @@ public class AnalyticsSerializable {
         maxDalay = Math.max(maxDalay, delay);
     }
 
-    
+
 
 }
