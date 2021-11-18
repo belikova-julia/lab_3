@@ -1,4 +1,8 @@
 package iu9;
 
-public class CreateAirportsStatistics {
+import java.util.function.Function;
+
+public class CreateAirportsStatistics implements Function<String, AnalyticsSerializable> {
+    public AnalyticsSerializable call(String )
+
 }
