@@ -9,6 +9,10 @@ public class RowSerializable implements Serializable {
         this.values = values;
     }
 
+    public String getValue(int column) {
+        return values[column];
+    }
+
     public static RowSerializable parseRow(String row, String del) {
         return new RowSerializable(
                 row.substring(1, row.length()-1).split("\""+del+"\"")
