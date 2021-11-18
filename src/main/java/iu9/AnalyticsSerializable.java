@@ -53,7 +53,8 @@ public class AnalyticsSerializable {
     }
 
     public static String getAnalytics(
-            Tuple2<Tuple2<String, String>, AnalyticsSerializable> airports) {
+            Tuple2<Tuple2<String, String>, AnalyticsSerializable> airportsInfo,
+            ) {
 
     }
 
