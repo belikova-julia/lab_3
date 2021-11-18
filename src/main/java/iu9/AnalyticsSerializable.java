@@ -1,2 +1,4 @@
-package iu9;public class AnalyticsSerializable {
+package iu9;
+
+public class AnalyticsSerializable {
 }
