@@ -21,7 +21,7 @@ public class AnalyzeAirportsApp {
 
         Map<String, String> airportMap = airportFile
                 .filter(s -> !s.contains("Code"))
-                .map(s -> RowSerializable.parseRow(s, ))
+                .map(s -> RowSerializable.parseRow(s, DELIMETER))
                 .mapToPair(s -> new Tuple1<>())
                 .collectAsMap();
         final Broadcast<Map<String, String>> airportBrodcasted =
