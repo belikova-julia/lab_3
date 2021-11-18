@@ -1,2 +1,4 @@
-package iu9;public class ModifyAirportsStatistics {
+package iu9;
+
+public class ModifyAirportsStatistics {
 }
