@@ -31,6 +31,7 @@ public class AnalyzeAirportsApp {
 
         JavaPairRDD<Tuple2<String, String>, AnalyticsSerializable> flightInfo = flightFile
                 .filter(s -> !s.contains("YEAR"))
-                .mapToPair()
+                .map(s -> RowSerializable.parseByRegex(s, DELIMETER))
+                .mapToPair(row -> new Tuple2<>(new Tuple2<>(row.getValue())))
     }
 }
