@@ -18,6 +18,6 @@ public class ModifyAirportsStatistics implements
             analytics.setMaxDelay(Float.parseFloat(delay));
             return analytics;
         }
-        return null;
+        return analytics;
     }
 }
