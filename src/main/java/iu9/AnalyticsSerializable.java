@@ -18,4 +18,19 @@ public class AnalyticsSerializable {
         this.amountOfFlights = amountOfFlights;
     }
 
+    public float getMaxDalay() {
+        return maxDalay;
+    }
+
+    public int getAmountOfDelays() {
+        return amountOfDelays;
+    }
+
+    public int getAmountOfCancells() {
+        return amountOfCancells;
+    }
+
+    public int setAmountOfFlights() {
+        return amountOfFlights;
+    }
 }
