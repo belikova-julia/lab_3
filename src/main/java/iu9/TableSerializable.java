@@ -3,10 +3,10 @@ package iu9;
 import java.io.Serializable;
 
 public class RowSerializable implements Serializable {
-    private String[] row;
+    private String[] values;
 
     private RowSerializable(String[] values) {
-        this.row = values;
+        this.values = values;
     }
 
     public static RowSerializable parseRow(String row, String del) {
