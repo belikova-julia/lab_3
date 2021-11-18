@@ -47,6 +47,6 @@ public class AnalyzeAirportsApp {
                         new MergeAirportsStatistics());
 
         JavaRDD<String> results = flightInfo.map(airports -> AnalyticsSerializable.getAnalytics());
-        results.saveAsTextFile();
+        results.saveAsTextFile(args[2]);
     }
 }
