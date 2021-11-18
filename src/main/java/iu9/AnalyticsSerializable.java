@@ -39,6 +39,8 @@ public class AnalyticsSerializable {
     }
 
     public void addCancellation() {
-        amountOfDelays++;
+        amountOfCancells++;
     }
+
+
 }
