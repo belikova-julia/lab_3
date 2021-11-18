@@ -6,7 +6,7 @@ public class TableSerializable implements Serializable {
 
     private RowSerializable(String[] )
 
-    public static TableSerializable parseRow(String row, String del) {
+    public static RowSerializable parseRow(String row, String del) {
         return new TableSerializable(
                 row.substring(1, row.length()-1).split("\""+del+"\"")
         );
