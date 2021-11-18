@@ -39,7 +39,7 @@ public class AnalyzeAirportsApp {
                 .map(s -> RowSerializable.parseByRegex(s, DELIMETER))
                 .mapToPair(row -> new Tuple2<>(new Tuple2<>(
                         row.getValue(ORIGIN_AIRPORT_COL),
-                        row.getValue(DELAY_COL)),
+                        row.getValue(DEST_AIRPORT_COL)),
                         row.getValue(DELAY_COL)))
                 .combineByKey(
                         new CreateAirportsStatistics(),
