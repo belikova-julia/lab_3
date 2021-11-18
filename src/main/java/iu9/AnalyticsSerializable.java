@@ -33,4 +33,8 @@ public class AnalyticsSerializable {
     public int getAmountOfFlights() {
         return amountOfFlights;
     }
+
+    public void addDelay() {
+        amountOfDelays++;
+    }
 }
