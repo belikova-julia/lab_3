@@ -64,7 +64,7 @@ public class AnalyticsSerializable {
         return fromAirport + "->" + toAirport + "\n" +
             " Max delay = " + analytics.getMaxDalay() +
             " " + "% Delayed = " + ((float) analytics.getAmountOfDelays()/analytics.getAmountOfFlights())*100 + "%" +
-            " " + "% Cancelled = " + ((float) analytics.amountOfCancells()/analytics.getAmountOfFlights())*100 + "%" +
+            " " + "% Cancelled = " + ((float) analytics.getAmountOfCancells()/analytics.getAmountOfFlights())*100 + "%" +
             " " + "Total = " + analytics.getAmountOfFlights();
     }
 }
