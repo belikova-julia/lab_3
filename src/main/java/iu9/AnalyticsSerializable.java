@@ -12,7 +12,10 @@ public class AnalyticsSerializable {
                                  int amountOfDelays,
                                  int amountOfCancells,
                                  int amountOfFlights) {
-
+        this.maxDalay = maxDalay;
+        this.amountOfDelays = amountOfDelays;
+        this.amountOfCancells = amountOfCancells;
+        this.amountOfFlights = amountOfFlights;
     }
 
 }
