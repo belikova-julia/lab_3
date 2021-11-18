@@ -29,6 +29,7 @@ public class AnalyzeAirportsApp {
         final Broadcast<Map<String, String>> airportBrodcasted =
                 sc.broadcast(airportMap);
 
-        JavaPairRDD<Tuple2<String, String>,>
+        JavaPairRDD<Tuple2<String, String>, AnalyticsSerializable> flightInfo = flightFile
+                .
     }
 }
