@@ -13,7 +13,7 @@ public class MergeAirportsStatistics implements
                 Float.max(analytics1.getMaxDalay(), analytics2.getMaxDalay()),
                 analytics1.getAmountOfDelays() + analytics2.getAmountOfDelays(),
                 analytics1.getAmountOfCancells() + analytics2.getAmountOfCancells(),
-                analytics1.getAmountOfFlights() + analytics2.getAmountOfFlights();
-                )
+                analytics1.getAmountOfFlights() + analytics2.getAmountOfFlights()
+                );
     }
 }
