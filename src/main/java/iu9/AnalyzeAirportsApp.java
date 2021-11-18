@@ -41,6 +41,9 @@ public class AnalyzeAirportsApp {
                         row.getValue(ORIGIN_AIRPORT_COL),
                         row.getValue(DELAY_COL)),
                         row.getValue(DELAY_COL)))
-                .combineByKey(new );
+                .combineByKey(
+                        new CreateAirportsStatistics(),
+                        new ModifyAirportsStatistics(),
+                        new MergeAirportsStatistics());
     }
 }
