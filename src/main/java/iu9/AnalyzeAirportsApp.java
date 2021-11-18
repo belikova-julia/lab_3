@@ -9,6 +9,9 @@ import scala.Tuple1;
 import java.util.Map;
 
 public class AnalyzeAirportsApp {
+    private static final DELIMETER = ",";
+
+    
     public static void main(String[] args) throws Exception {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
@@ -18,7 +21,7 @@ public class AnalyzeAirportsApp {
 
         Map<String, String> airportMap = airportFile
                 .filter(s -> !s.contains("Code"))
-                .map(s -> )
+                .map(s -> RowSerializable.parseRow(s, ))
                 .mapToPair(s -> new Tuple1<>())
                 .collectAsMap();
         final Broadcast<Map<String, String>> airportBrodcasted =
