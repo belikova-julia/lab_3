@@ -30,7 +30,7 @@ public class AnalyticsSerializable {
         return amountOfCancells;
     }
 
-    public int setAmountOfFlights() {
+    public int getAmountOfFlights() {
         return amountOfFlights;
     }
 }
