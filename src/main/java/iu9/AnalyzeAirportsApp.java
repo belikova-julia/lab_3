@@ -14,6 +14,8 @@ public class AnalyzeAirportsApp {
 
         Map<String, String> airportMap = airportFile
                 .filter(s -> !s.contains("Code"))
-                .
+                .map(s -> )
+                .mapToPair(s -> new Tuple1<>())
+                .collectAsMap();
     }
 }
