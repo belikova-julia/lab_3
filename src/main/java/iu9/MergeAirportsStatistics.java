@@ -7,7 +7,8 @@ import java.util.function.Function;
 public class MergeAirportsStatistics implements
         Function2<AnalyticsSerializable, AnalyticsSerializable, AnalyticsSerializable> {
     @Override
-    public AnalyticsSerializable call(AnalyticsSerializable analyticsSerializable, AnalyticsSerializable analyticsSerializable2) throws Exception {
+    public AnalyticsSerializable call(AnalyticsSerializable analytics1,
+                                      AnalyticsSerializable analytics2) throws Exception {
         return null;
     }
 }
