@@ -30,6 +30,7 @@ public class AnalyzeAirportsApp {
                 sc.broadcast(airportMap);
 
         JavaPairRDD<Tuple2<String, String>, AnalyticsSerializable> flightInfo = flightFile
-                .
+                .filter(s -> !s.contains("YEAR"))
+                .mapToPair()
     }
 }
