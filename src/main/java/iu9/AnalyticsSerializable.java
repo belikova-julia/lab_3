@@ -2,6 +2,8 @@ package iu9;
 
 import scala.Tuple2;
 
+import java.util.Map;
+
 public class AnalyticsSerializable {
     private static final long serialVersionUID = 2L;
 
@@ -54,9 +56,17 @@ public class AnalyticsSerializable {
 
     public static String getAnalytics(
             Tuple2<Tuple2<String, String>, AnalyticsSerializable> airportsInfo,
-            ) {
+            Map<String, String> dictionary) {
+        String fromAirport = dictionary.get(airportsInfo._1()._1());
+        String toAirport = dictionary.get(airportsInfo._1()._2());
+        AnalyticsSerializable analytics = airportsInfo._2();
+
+        return fromAirport + "->" + toAirport + "\n" +
+            " Max delay = " + analytics.getMaxDalay() +
+            " " + "% Delayed = " + ((float) analytics.getAmountOfDelays()/analytics.getAmountOfFlights())*100 + "%" +
+            " " + "% Cancelled = " + ((float) analytics.amountOfCancells()/analytics.getAmountOfFlights())*100 + "%" +
+            " " + "Total = " + analytics.getAmountOfFlights();
+
 
     }
-
-
 }
