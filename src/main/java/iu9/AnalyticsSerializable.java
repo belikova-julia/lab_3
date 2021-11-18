@@ -42,5 +42,8 @@ public class AnalyticsSerializable {
         amountOfCancells++;
     }
 
+    public void addFlight() {
+        amountOfFlights++;
+    }
 
 }
