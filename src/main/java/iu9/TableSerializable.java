@@ -18,4 +18,8 @@ public class RowSerializable implements Serializable {
                 row.substring(1, row.length()-1).split("\""+del+"\"")
         );
     }
+
+    public static RowSerializable parseByRegex(String row, String regex) {
+        return new RowSerializable(row.split(regex));
+    }
 }
