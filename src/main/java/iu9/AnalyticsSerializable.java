@@ -66,7 +66,5 @@ public class AnalyticsSerializable {
             " " + "% Delayed = " + ((float) analytics.getAmountOfDelays()/analytics.getAmountOfFlights())*100 + "%" +
             " " + "% Cancelled = " + ((float) analytics.amountOfCancells()/analytics.getAmountOfFlights())*100 + "%" +
             " " + "Total = " + analytics.getAmountOfFlights();
-
-
     }
 }
