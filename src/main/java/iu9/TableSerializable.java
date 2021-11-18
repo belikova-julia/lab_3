@@ -2,7 +2,7 @@ package iu9;
 
 import java.io.Serializable;
 
-public class TableSerializable implements Serializable {
+public class RowSerializable implements Serializable {
 
     private RowSerializable(String[] )
 
