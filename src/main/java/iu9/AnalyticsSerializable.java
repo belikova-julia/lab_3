@@ -47,6 +47,8 @@ public class AnalyticsSerializable {
     }
 
     public void setMaxDelay(float delay) {
-        maxDalay = maxDalay > delay ? maxDalay : delay;
+        maxDalay = Math.max(maxDalay, delay);
     }
+
+    
 }
