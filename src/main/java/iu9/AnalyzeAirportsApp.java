@@ -11,6 +11,6 @@ public class AnalyzeAirportsApp {
 
         JavaRDD<String> flightFile = sc.textFile("data/flights.csv");
         JavaRDD<String> airportFile = sc.textFile("data/airports.csv");
-        
+
     }
 }
