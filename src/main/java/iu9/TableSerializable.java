@@ -1,2 +1,4 @@
-package iu9;public class TableSerializable {
+package iu9;
+
+public class TableSerializable {
 }
