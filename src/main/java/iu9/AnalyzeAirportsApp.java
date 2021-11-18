@@ -25,9 +25,9 @@ public class AnalyzeAirportsApp {
         Map<String, String> airportMap = airportFile
                 .filter(s -> !s.contains("Code"))
                 .map(s -> RowSerializable.parseRow(s, DELIMETER))
-                .mapToPair(row -> new Tuple2<>(row.getValue()))
+                .mapToPair(row -> new Tuple2<>(row.getValue(AIRPORT_ID_COL), row.getValue(AIRPORT_NAME_COL)))
                 .collectAsMap();
         final Broadcast<Map<String, String>> airportBrodcasted =
-                sc.broadcast(airportMap)
+                sc.broadcast(airportMap);
     }
 }
