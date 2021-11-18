@@ -10,8 +10,13 @@ import java.util.Map;
 
 public class AnalyzeAirportsApp {
     private static final String DELIMETER = ",";
+
     private static final int AIRPORT_ID_COL = 0;
     private static final int AIRPORT_NAME_COL = 1;
+
+    private static final int ORIGIN_AIRPORT_COL = 11;
+    private static final int DEST_AIRPORT_COL = 14;
+    private static final int DELAY_COL = 18;
 
 
     public static void main(String[] args) throws Exception {
