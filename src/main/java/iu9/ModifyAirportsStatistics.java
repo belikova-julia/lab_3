@@ -2,7 +2,8 @@ package iu9;
 
 import org.apache.spark.api.java.function.Function2;
 
-public class ModifyAirportsStatistics implements Function2<AnalyticsSerializable,
+public class ModifyAirportsStatistics implements
+        Function2<AnalyticsSerializable,
         String,
         AnalyticsSerializable> {
     @Override
