@@ -11,6 +11,7 @@ import java.util.Map;
 
 public class AnalyzeAirportsApp {
     private static final String DELIMETER = ",";
+    private static final String OUTPUT_FILE = "hdfs://localhost:9000/user/julia/output";
 
     private static final int AIRPORT_ID_COL = 0;
     private static final int AIRPORT_NAME_COL = 1;
@@ -48,6 +49,6 @@ public class AnalyzeAirportsApp {
 
         JavaRDD<String> results = flightInfo.map(airportsInfo -> AnalyticsSerializable
                 .getAnalytics(airportsInfo, airportBrodcasted.value()));
-        results.saveAsTextFile("hdfs://localhost:9000/user/julia/output");
+        results.saveAsTextFile(OUTPUT_FILE);
     }
 }
