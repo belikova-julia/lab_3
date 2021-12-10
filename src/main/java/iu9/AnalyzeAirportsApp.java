@@ -48,6 +48,6 @@ public class AnalyzeAirportsApp {
 
         JavaRDD<String> results = flightInfo.map(airportsInfo -> AnalyticsSerializable
                 .getAnalytics(airportsInfo, airportBrodcasted.value()));
-        results.saveAsTextFile("results");
+        results.saveAsTextFile("hdfs://localhost:9000/user/julia/output");
     }
 }
