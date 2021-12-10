@@ -24,5 +24,5 @@ hadoop fs -rm -r -f  hdfs://localhost:9000/user/julia/output
 hadoop fs -copyFromLocal data/flight.csv
 hadoop fs -copyFromLocal data/airport.csv
 
-spark-submit --class iu9.AnalyzeAirportsApp --master yarn-client --num-executors 3 target/AnalyzeAirportsApp.jar
+spark-submit --class iu9.AnalyzeAirportsApp --master yarn-client --num-executors 3 target/spark-examples-1.0-SNAPSHOT.jar
 hadoop fs -copyToLocal output
